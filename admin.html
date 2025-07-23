@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>番号更新</title>
+  <script>
+    function updateNumber() {
+      const newNumber = document.getElementById('newNumber').value;
+      localStorage.setItem('callNumber', newNumber);
+      alert('番号を更新しました');
+    }
+  </script>
+</head>
+<body>
+  <h1>呼び出し番号の更新</h1>
+  <input type="number" id="newNumber" placeholder="新しい番号">
+  <button onclick="updateNumber()">更新</button>
+</body>
+</html>
